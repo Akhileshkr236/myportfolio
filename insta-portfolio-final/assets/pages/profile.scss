@@ -1,0 +1,26 @@
+.profile-pic{
+  top: 0;
+  transform: translateY(-50%);
+  img{
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+}
+.online-badge{
+  position: absolute;
+  bottom: 6px;
+  right: 20px;
+  width: 24px;
+  border: 4px solid white;
+  height: 24px;
+  background: $success;
+}
+
+/*
+----------new code---------*/
+.profile-wrap{
+  img{
+    width: 4.8125rem;
+    height: 4.8125rem;
+  }
+}

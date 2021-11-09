@@ -1,0 +1,21 @@
+.card{
+  box-shadow: 0 0.0625rem 0.1875rem rgba($theme-box-shadow, .1);
+}
+
+/*
+----------new code---------*/
+.project-list-wrap{
+  .project-list-top{
+    .project-img{
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .project-list-middle{
+    margin: 0 -1rem;
+    .project-img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
