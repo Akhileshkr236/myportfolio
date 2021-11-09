@@ -1,0 +1,83 @@
+<section class="page-pt px-3 page-pb page-box min-vh-100 profile-wrap">
+  <!--profile top img and name-->
+  <div class="d-flex align-items-start mt-3 mb-4">
+    <div>
+      <img src="assets/images/profile.jpg" class="rounded-circle mr-4">
+    </div>
+    <div class="w-100">
+      <h2 class="font-size-28 font-weight-thin">Akhilesh Kumar</h2>
+      <button class="btn btn-outline-darkest font-weight-semi-bold py-0 w-100">Download Resume</button>
+    </div>
+  </div>
+  <div class="mb-4">
+    <h1 class="heading-title">Akhilesh Kumar</h1>
+    <p class="sub-heading">UI Developer at MetaDesign Solutions</p>
+  </div>
+  <hr class="hor-line">
+  <div class="profile-overview d-flex justify-content-between align-items-center py-2">
+    <div class="text-center">
+      <p class="heading-title mb-0">1.5+</p>
+      <p class="sub-heading text-muted mb-0">Experience</p>
+    </div>
+    <div class="text-center">
+      <p class="heading-title mb-0">1.5+</p>
+      <p class="sub-heading text-muted mb-0">Experience</p>
+    </div>
+    <div class="text-center">
+      <p class="heading-title mb-0">1.5+</p>
+      <p class="sub-heading text-muted mb-0">Experience</p>
+    </div>
+  </div>
+  <hr class="hor-line">
+  <div class="project-list-wrap">
+    <div class="project-list-top d-flex justify-content-between align-items-center py-3">
+      <div class="d-flex align-items-center">
+        <img src="assets/images/profile.jpg" class="project-img rounded-circle">
+        <h1 class="heading-title mb-0 ml-2 font-weight-medium">Akhilesh Kumar</h1>
+      </div>
+      <div>
+        <button class="btn p-0"><i class="icon-more-horizontal" (click)="open(content)"></i></button>
+      </div>
+    </div>
+    <hr class="hor-line">
+    <div class="project-list-middle">
+      <img src="assets/images/profile.jpg" class="project-img">
+    </div>
+    <hr class="hor-line">
+    <div class="d-flex justify-content-between align-items-center py-1">
+      <div class="d-flex align-items-center">
+        <button class="btn p-0"><i class="icon-copy"></i></button>
+      </div>
+      <div>
+        <button class="btn btn-white p-0"><i class="icon-send"></i></button>
+      </div>
+    </div>
+    <div>
+      <p class="heading-title mb-0 font-weight-medium">Akhilesh Kumar</p>
+      <p class="sub-heading mb-0 text-truncate">
+        There are many variations of passages of Lorem Ipsum available
+      </p>
+      <p class="sub-heading" (click)="readMore( readMoreModal )">read more</p>
+      <p class="text-muted font-size-10">June 2021 - Present</p>
+    </div>
+  </div>
+</section>
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-body p-0 text-center">
+    <ul class="list-group list-group-flush height-sm rounded">
+      <li class="list-group-item">Go to project</li>
+      <li class="list-group-item">Copy link</li>
+      <li class="list-group-item text-danger font-weight-bold" aria-label="Close" (click)="d('Cross click')">Cancel</li>
+    </ul>
+  </div>
+</ng-template>
+<ng-template #readMoreModal let-c="close" let-d="dismiss">
+  <div class="modal-body p-0 text-center">
+    <ul class="list-group list-group-flush height-sm rounded">
+      <li class="list-group-item">Go to project</li>
+      <li class="list-group-item">Copy link</li>
+      <li class="list-group-item text-danger font-weight-bold" aria-label="Close" (click)="d('Cross click')">Cancel</li>
+    </ul>
+  </div>
+</ng-template>
+
