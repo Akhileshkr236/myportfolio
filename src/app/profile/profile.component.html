@@ -9,9 +9,46 @@
       <button class="btn btn-outline-darkest font-weight-semi-bold py-0 w-100">Download Resume</button>
     </div>
   </div>
+  <!--profile desc-->
   <div class="mb-4">
     <h1 class="heading-title">Akhilesh Kumar</h1>
     <p class="sub-heading">UI Developer at MetaDesign Solutions</p>
+  </div>
+  <!--social handle wrap-->
+  <div class="mb-4">
+    <div class="d-flex">
+      <ng-container  *ngFor="let item of socialHandle">
+          <div class="mr-2">
+            <a [href]="item.link" target="_blank">
+              <div class="circle-card">
+                <div class="card-inner {{ item.background }}">
+                  <i class="{{ item.icon }}"></i>
+                </div>
+              </div>
+            </a>
+            <p class="sub-heading font-size-12 text-truncate text-center text-muted mb-0 ">{{ item.title }} </p>
+          </div>
+      </ng-container>
+    </div>
+    <!--<div class="custom-owl-carousel no-nav">
+      <owl-carousel-o [options]="customOptions">
+        <ng-container>
+          <ng-container  *ngFor="let item of socialHandle">
+          <ng-template carouselSlide>
+            <a [href]="item.link" target="_blank">
+              <div class="circle-card">
+                <div class="card-inner {{ item.background }}">
+                  <i class="{{ item.icon }}"></i>
+                </div>
+              </div>
+            </a>
+            <p class="sub-heading font-size-12 text-truncate text-center text-muted mb-0 mr-2">{{ item.title }} </p>
+          </ng-template>
+          </ng-container>
+        </ng-container>
+
+      </owl-carousel-o>
+    </div>-->
   </div>
   <hr class="hor-line">
   <div class="profile-overview d-flex justify-content-between align-items-center py-2">
@@ -64,7 +101,7 @@
 </section>
 <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-body p-0 text-center">
-    <ul class="list-group list-group-flush height-sm rounded">
+    <ul class="list-group list-group-flush height-sm border-radius-10">
       <li class="list-group-item">Go to project</li>
       <li class="list-group-item">Copy link</li>
       <li class="list-group-item text-danger font-weight-bold" aria-label="Close" (click)="d('Cross click')">Cancel</li>
@@ -73,7 +110,7 @@
 </ng-template>
 <ng-template #readMoreModal let-c="close" let-d="dismiss">
   <div class="modal-body p-0 text-center">
-    <ul class="list-group list-group-flush height-sm rounded">
+    <ul class="list-group list-group-flush height-sm border-radius-10">
       <li class="list-group-item">Go to project</li>
       <li class="list-group-item">Copy link</li>
       <li class="list-group-item text-danger font-weight-bold" aria-label="Close" (click)="d('Cross click')">Cancel</li>

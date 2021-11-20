@@ -19,3 +19,43 @@
     }
   }
 }
+.circle-card{
+  width: 4rem;
+  height: 4rem;
+  padding: 0.25rem;
+  border: 0.0625rem solid $border-color;
+  border-radius: 50%;
+  &:nth-last-child(1){
+    margin-right: 0;
+  }
+  .card-inner{
+    position: relative;
+    color: $white;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    i{
+      font-size: $font-size-20;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+/*
+Carousel*/
+.custom-owl-carousel{
+  .owl-carousel {
+    &.owl-drag {
+      .owl-item{
+        max-width: 70px;
+      }
+    }
+  }
+  &.no-nav{
+    .owl-nav{
+      display: none;
+    }
+  }
+}

@@ -12,6 +12,11 @@
     }
   }
 }
+.custom-centered-modal{
+  .modal-content{
+    border-radius: 0.625rem;
+  }
+}
 @keyframes bottom-slide {
   0%{
     bottom: -100%;

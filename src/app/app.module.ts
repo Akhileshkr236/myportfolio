@@ -9,7 +9,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { SkillsComponent } from './skills/skills.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
