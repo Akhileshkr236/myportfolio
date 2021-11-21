@@ -11,6 +11,7 @@ import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
+
 @NgModule({
   declarations: [
     AppComponent,
