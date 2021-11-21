@@ -5,3 +5,25 @@ $headings-color: #262626;
 $btn-red: #ed4956;
 $btn-blue: #0095f6;
 $btn-black: #212529;
+$github-color: #0d2636;
+$linkedin-color: #0274b3;
+$insta-yellow: #f6df00;
+$insta-purple: #7a36ad;
+
+
+$font-size-10: 0.625rem;
+$font-size-12: 0.75rem;
+$font-size-20: 1.25rem;
+$font-size-24: 1.5rem;
+$font-size-28: 1.75rem;
+
+/*Background color classes*/
+.linkedin-bg{
+  background: $linkedin-color;
+}
+.github-bg{
+  background: $github-color;
+}
+.instagram-bg{
+  background: linear-gradient( 45deg, $insta-yellow 10%, $insta-purple 80%);
+}
