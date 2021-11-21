@@ -6,9 +6,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkExperienceComponent implements OnInit {
 
-  constructor() { }
+  public workExperience: any;
+  constructor() {
+    this.workExperience= [
+      {
+        name: 'Akhilesh Kumar',
+        duration: 'June 2021 - Present',
+        designation: 'UI Developer',
+        imageSrc: 'assets/images/mdslogo.png',
+        profile: 'assets/images/profile.jpg'
+      }
+    ]
+  }
 
   ngOnInit(): void {
+    console.log(this.workExperience)
   }
 
 }

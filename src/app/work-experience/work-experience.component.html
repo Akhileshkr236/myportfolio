@@ -1,105 +1,108 @@
 <section class="page-pt px-3 page-pb page-box min-vh-100">
-  <div class="project-list-wrap">
-    <div class="project-list-top d-flex justify-content-between align-items-center py-3">
-      <div class="d-flex align-items-center">
-        <img src="assets/images/profile.jpg" class="project-img rounded-circle">
-        <div class="ml-2">
-          <h1 class="heading-title mb-0 font-weight-medium">Akhilesh Kumar (June 2021 - Present)</h1>
-          <p class="text-muted font-size-10 m-0">UI Developer</p>
-        </div>
-      </div>
-      <div>
-        <button class="btn p-0"><i class="icon-more-horizontal"></i></button>
-      </div>
-    </div>
-    <hr class="hor-line">
-    <div class="project-list-middle">
-      <img src="assets/images/mdslogo.png" class="project-img">
-    </div>
-    <hr class="hor-line">
-    <div class="d-flex justify-content-between align-items-center py-1">
-      <div class="d-flex align-items-center">
-        <button class="btn p-2" ngbTooltip="Projects"><i class="icon-book-open font-size-24"></i></button>
-        <button class="btn p-2" ngbTooltip="Tools"><i class="icon-tool font-size-24"></i></button>
-      </div>
-      <div>
-        <button class="btn p-2"><a href="https://www.linkedin.com/company/metadesign-solutions/mycompany/"><i class="icon-send font-size-24"></i></a></button>
-      </div>
-    </div>
-    <!--Job Responsibility-->
-    <div class="p-1">
-      <p class="heading-title mb-2">Job Responsibility
-      <ul class="mb-2">
-        <li class="sub-heading">Collaborate with product managers and designers to iterate on requirements, designs, and implementations.</li>
-        <li class="sub-heading">Bridge the gap between user interface design and technical implementation.</li>
-        <li class="sub-heading">Currently working on Responsive design, JS libraries(Angular) for enhanced interactions.</li>
-      </ul>
-    </div>
-    <!--Projects-->
-    <div class="p-1">
-      <p class="heading-title mb-2">Projects
-      <ul class="mb-2">
-        <li class="sub-heading"><a href="#">Trutwork</a></li>
-      <li class="sub-heading"><a href="#">Futuregenerali</a></li>
-      <li class="sub-heading"><a href="#">Fuild HS</a></li>
-      </ul>
-    </div>
-    <!--Tools used-->
-    <div class="p-1">
-      <p class="heading-title mb-2">Tools used
-      <p class="heading-title mb-0 font-weight-medium">Programming Languages</p>
-      <div class="mb-2">
-        <div class="project-list-top d-flex justify-content-between align-items-center py-2 one-line-desc">
-          <div class="d-flex align-items-center">
-            <p class="project-img rounded-circle position-relative m-0"><span>A</span></p>
-            <div class="ml-2">
-              <h1 class="heading-title mb-0 font-weight-medium">Angular 12</h1>
-            </div>
-          </div>
-          <div>
-            <button class="btn btn-primary-custom width-117 py-0">Intermediate</button>
-          </div>
-        </div>
-        <div class="project-list-top d-flex justify-content-between align-items-center py-2 one-line-desc">
-          <div class="d-flex align-items-center">
-            <p class="project-img rounded-circle position-relative m-0"><span>C</span></p>
-            <div class="ml-2">
-              <h1 class="heading-title mb-0 font-weight-medium">CSS</h1>
-            </div>
-          </div>
-          <div>
-            <button class="btn btn-primary-custom width-117 py-0">Expert</button>
-          </div>
-        </div>
-        <div class="project-list-top d-flex justify-content-between align-items-center py-2 one-line-desc">
+  <!--Company lists-->
+  <ng-container *ngFor="let exp of workExperience">
+    <div class="project-list-wrap">
+      <div class="project-list-top d-flex justify-content-between align-items-center py-3">
         <div class="d-flex align-items-center">
-          <p class="project-img rounded-circle position-relative m-0"><span>H</span></p>
+          <img [src]="exp.profile" class="project-img rounded-circle">
           <div class="ml-2">
-            <h1 class="heading-title mb-0 font-weight-medium">HTML</h1>
+            <h1 class="heading-title mb-0 font-weight-medium">{{exp.name}} {{exp.duration}}</h1>
+            <p class="text-muted font-size-10 m-0">{{ exp.designation }}</p>
           </div>
         </div>
         <div>
-          <button class="btn btn-primary-custom width-117 py-0">Expert</button>
+          <button class="btn p-0"><i class="icon-more-horizontal"></i></button>
         </div>
       </div>
+      <hr class="hor-line">
+      <div class="project-list-middle">
+        <img [src]="exp.imageSrc" class="project-img">
       </div>
-      <p class="heading-title mb-0 font-weight-medium">Softwares</p>
-      <div class="mb-2">
-        <div class="project-list-top d-flex justify-content-between align-items-center py-2 one-line-desc">
-          <div class="d-flex align-items-center">
-            <p class="project-img rounded-circle position-relative m-0"><span>G</span></p>
-            <div class="ml-2">
-              <h1 class="heading-title mb-0 font-weight-medium">Git</h1>
+      <hr class="hor-line">
+      <div class="d-flex justify-content-between align-items-center py-1">
+        <div class="d-flex align-items-center">
+          <button class="btn p-2" ngbTooltip="Projects"><i class="icon-book-open font-size-24"></i></button>
+          <button class="btn p-2" ngbTooltip="Tools"><i class="icon-tool font-size-24"></i></button>
+        </div>
+        <div>
+          <button class="btn p-2"><a href="https://www.linkedin.com/company/metadesign-solutions/mycompany/"><i class="icon-send font-size-24"></i></a></button>
+        </div>
+      </div>
+      <!--Job Responsibility-->
+      <div class="p-1">
+        <p class="heading-title mb-2">Job Responsibility
+        <ul class="mb-2">
+          <li class="sub-heading">Collaborate with product managers and designers to iterate on requirements, designs, and implementations.</li>
+          <li class="sub-heading">Bridge the gap between user interface design and technical implementation.</li>
+          <li class="sub-heading">Currently working on Responsive design, JS libraries(Angular) for enhanced interactions.</li>
+        </ul>
+      </div>
+      <!--Projects-->
+      <div class="p-1">
+        <p class="heading-title mb-2">Projects
+        <ul class="mb-2">
+          <li class="sub-heading"><a href="#">Trutwork</a></li>
+          <li class="sub-heading"><a href="#">Futuregenerali</a></li>
+          <li class="sub-heading"><a href="#">Fuild HS</a></li>
+        </ul>
+      </div>
+      <!--Tools used-->
+      <div class="p-1">
+        <p class="heading-title mb-2">Tools used
+        <p class="heading-title mb-0 font-weight-medium">Programming Languages</p>
+        <div class="mb-2">
+          <div class="project-list-top d-flex justify-content-between align-items-center py-2 one-line-desc">
+            <div class="d-flex align-items-center">
+              <p class="project-img rounded-circle position-relative m-0"><span>A</span></p>
+              <div class="ml-2">
+                <h1 class="heading-title mb-0 font-weight-medium">Angular 12</h1>
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-primary-custom width-117 py-0">Intermediate</button>
             </div>
           </div>
-          <div>
-            <button class="btn btn-primary-custom width-117 py-0">Intermediate</button>
+          <div class="project-list-top d-flex justify-content-between align-items-center py-2 one-line-desc">
+            <div class="d-flex align-items-center">
+              <p class="project-img rounded-circle position-relative m-0"><span>C</span></p>
+              <div class="ml-2">
+                <h1 class="heading-title mb-0 font-weight-medium">CSS</h1>
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-primary-custom width-117 py-0">Expert</button>
+            </div>
+          </div>
+          <div class="project-list-top d-flex justify-content-between align-items-center py-2 one-line-desc">
+            <div class="d-flex align-items-center">
+              <p class="project-img rounded-circle position-relative m-0"><span>H</span></p>
+              <div class="ml-2">
+                <h1 class="heading-title mb-0 font-weight-medium">HTML</h1>
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-primary-custom width-117 py-0">Expert</button>
+            </div>
+          </div>
+        </div>
+        <p class="heading-title mb-0 font-weight-medium">Softwares</p>
+        <div class="mb-2">
+          <div class="project-list-top d-flex justify-content-between align-items-center py-2 one-line-desc">
+            <div class="d-flex align-items-center">
+              <p class="project-img rounded-circle position-relative m-0"><span>G</span></p>
+              <div class="ml-2">
+                <h1 class="heading-title mb-0 font-weight-medium">Git</h1>
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-primary-custom width-117 py-0">Intermediate</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="project-list-wrap">
+  </ng-container>
+  <!--<div class="project-list-wrap">
     <div class="project-list-top d-flex justify-content-between align-items-center py-3">
       <div class="d-flex align-items-center">
         <img src="assets/images/profile.jpg" class="project-img rounded-circle">
@@ -117,7 +120,7 @@
       <img src="assets/images/vorrowtechlogo.jpg" class="project-img">
     </div>
     <hr class="hor-line">
-    <!--Job Responsibility-->
+    &lt;!&ndash;Job Responsibility&ndash;&gt;
     <div class="p-1">
       <p class="heading-title mb-2">Job Responsibility
       <ul class="mb-2">
@@ -125,7 +128,7 @@
         <li class="sub-heading">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</li>
       </ul>
     </div>
-    <!--Tools used-->
+    &lt;!&ndash;Tools used&ndash;&gt;
     <div class="p-1">
       <p class="heading-title mb-2">Tools used
       <p class="heading-title mb-0 font-weight-medium">Programming Languages</p>
@@ -231,7 +234,7 @@
       <img src="assets/images/Freelancer-Logo.jpg" class="project-img">
     </div>
     <hr class="hor-line">
-    <!--Job Responsibility-->
+    &lt;!&ndash;Job Responsibility&ndash;&gt;
     <div class="p-1">
       <p class="heading-title mb-2">Job Responsibility</p>
       <ul class="mb-2">
@@ -239,7 +242,7 @@
         <li class="sub-heading">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</li>
       </ul>
     </div>
-    <!--Tools used-->
+    &lt;!&ndash;Tools used&ndash;&gt;
     <div class="p-1">
       <p class="heading-title mb-2">Tools used</p>
       <p class="heading-title mb-0 font-weight-medium">Programming Languages</p>
@@ -326,5 +329,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 </section>
+
+
