@@ -7,8 +7,12 @@
 .project-list-wrap{
   .project-list-top{
     .project-img{
-      width: 2rem;
-      height: 2rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      &.project-img-lg{
+        width: 2rem;
+        height: 2rem;
+      }
     }
   }
   .project-list-middle{
