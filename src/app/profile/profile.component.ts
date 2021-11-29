@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from "@angular/router";
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+
 
 @Component({
   selector: 'app-profile',
@@ -13,6 +15,7 @@ export class ProfileComponent implements OnInit {
   constructor(
     config: NgbModalConfig,
     private modalService: NgbModal,
+    private router: Router
   ) {
     this.socialHandle = [
       {
@@ -43,6 +46,12 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
   }
   open(content) {
     this.modalService.open(content, {

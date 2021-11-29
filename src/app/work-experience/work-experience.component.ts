@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-work-experience',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class WorkExperienceComponent implements OnInit {
 
   public workExperience: any;
-  constructor() {
+  constructor(
+    private router: Router
+  ) {
     this.workExperience= [
       {
         name: 'Akhilesh Kumar',
@@ -15,6 +18,7 @@ export class WorkExperienceComponent implements OnInit {
         designation: 'UI Developer',
         imageSrc: 'assets/images/mdslogo.png',
         profile: 'assets/images/profile.jpg',
+        companyLink: 'https://metadesignsolutions.com/',
         jobDesc: [
           'Collaborate with product managers and designers to iterate on requirements, designs, and implementations.',
           'Bridge the gap between user interface design and technical implementation.',
@@ -32,7 +36,8 @@ export class WorkExperienceComponent implements OnInit {
           'HTML/HTML5',
         ],
         softwares:[
-          'Git'
+          'Git',
+          'Figma'
         ]
       },
       {
@@ -41,13 +46,15 @@ export class WorkExperienceComponent implements OnInit {
         designation: 'Jr. Front End Developer',
         imageSrc: 'assets/images/vorrowtechlogo.jpg',
         profile: 'assets/images/profile.jpg',
+        companyLink: 'https://www.vorrowtech.com/',
         jobDesc: [
+          'Worked as UI Designer and Developer',
           'Collaborate with product managers and designers to iterate on requirements, designs, and implementations.',
           'Bridge the gap between user interface design and technical implementation.',
-          'Currently working on Responsive design, JS libraries(Angular) for enhanced interactions.'
+          'Day to day responsibility consist of reviewing code and writing code in a manner that it can be reused.'
         ],
         projects: [
-          'Bunger Group',
+          'Bunker Group',
           'Hycin- How you chat in',
           'Bisht Physics'
         ],
@@ -60,35 +67,32 @@ export class WorkExperienceComponent implements OnInit {
           'Adobe Photoshop',
           'Adobe XD',
           'Adobe Illustrator',
-          'Adobe After effects'
+          'Adobe After effects',
+          'Figma'
         ]
       },
       {
         name: 'Akhilesh Kumar',
-        duration: 'June 2020 - Sept 2020',
+        duration: 'June 2019 - Sept 2020',
         designation: 'As a Freelancer',
         imageSrc: 'assets/images/Freelancer-Logo.jpg',
         profile: 'assets/images/profile.jpg',
         jobDesc: [
-          'Collaborate with product managers and designers to iterate on requirements, designs, and implementations.',
-          'Bridge the gap between user interface design and technical implementation.',
-          'Currently working on Responsive design, JS libraries(Angular) for enhanced interactions.'
-        ],
-        projects: [
-          'Trustwork',
-          'Futuregenerali',
-          'Fluid HS'
+          'Collaborate with clients to iterate on requirements, designs, and implementations.',
+          'To finish taken projects on or before deadline.'
         ],
         languages: [
           'PHP',
           'MySQL',
-          'JavaScript/ jQuery',
-          'CSS/ CSS3',
           'HTML/ HTML5',
+          'CSS/ CSS3',
+          'JavaScript/ jQuery',
         ],
         softwares:[
           'Adobe Photoshop',
           'Adobe Illustrator',
+          'Adobe XD',
+          'Figma'
         ]
       },
     ]
@@ -97,6 +101,13 @@ export class WorkExperienceComponent implements OnInit {
     letter = letter.charAt(0);
     return letter;
   }
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
+  }
 
 }

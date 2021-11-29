@@ -1,1 +1,21 @@
-<p>skills works!</p>
+<section class="page-pt px-3 page-pb page-box min-vh-100">
+  <!--Company lists-->
+  <ng-container *ngFor="let skill of skills">
+    <p class="heading-title my-2">{{ skill.skillType }}</p>
+    <ng-container *ngFor="let language of skill.skillList">
+    <div class="project-list-wrap my-4">
+      <div class="project-list-top d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center project-list-top one-line-desc">
+          <p class="project-img project-img-lg rounded-circle position-relative m-0"><span [innerHTML]="getFirstLetter(language)"></span></p>
+          <div class="ml-2">
+            <h1 class="heading-title mb-0 font-weight-medium">{{ language }}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    </ng-container>
+  </ng-container>
+  <hr class="hor-line">
+</section>
+
+

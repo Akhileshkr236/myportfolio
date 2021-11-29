@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'education', component: EducationComponent },
   { path: 'work-experience', component: WorkExperienceComponent },
-  { path: 'skills', component: SkillsComponent}
+  { path: 'skills', component: SkillsComponent }
 ];
 
 @NgModule({
@@ -19,4 +19,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routingComponents = [ ProfileComponent, EducationComponent, WorkExperienceComponent, SkillsComponent  ];
+export const routingComponents = [ ProfileComponent, EducationComponent, WorkExperienceComponent, SkillsComponent ];

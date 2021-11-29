@@ -12,11 +12,13 @@
   <!--profile desc-->
   <div class="mb-4">
     <h1 class="heading-title">Akhilesh Kumar</h1>
-    <p class="sub-heading">UI Developer at MetaDesign Solutions</p>
+    <p class="sub-heading mb-3">Hey! I'm Akhilesh, a UI developer, who strives to develop efficient frontend solutions and design beautiful & user-friendly user interfaces. This is my home on the web where I post my thoughts and showcase my work and a bit about myself.</p>
+    <p class="sub-heading mb-3">In my free time, I like to do sketching and learn new things.</p>
+    <p class="sub-heading">I try my hands on a lot of things but I consider myself best in designing and developing UI for projects. For the Frontend, I mostly use Angular with git as the version control system. For the Backend, I work best with node.js and php. For the Database, I work best with MySQL, currently learning MongoDB also</p>
   </div>
   <!--social handle wrap-->
   <div class="mb-4">
-    <div class="d-flex">
+<!--    <div class="d-flex">
       <ng-container  *ngFor="let item of socialHandle">
           <div class="mr-2">
             <a [href]="item.link" target="_blank">
@@ -29,8 +31,9 @@
             <p class="sub-heading font-size-12 text-truncate text-center text-muted mb-0 ">{{ item.title }} </p>
           </div>
       </ng-container>
-    </div>
-    <!--<div class="custom-owl-carousel no-nav">
+    </div>-->
+
+    <div class="custom-owl-carousel no-nav">
       <owl-carousel-o [options]="customOptions">
         <ng-container>
           <ng-container  *ngFor="let item of socialHandle">
@@ -48,56 +51,21 @@
         </ng-container>
 
       </owl-carousel-o>
-    </div>-->
-  </div>
-  <hr class="hor-line">
-  <div class="profile-overview d-flex justify-content-between align-items-center py-2">
-    <div class="text-center">
-      <p class="heading-title mb-0">1.5+</p>
-      <p class="sub-heading text-muted mb-0">Experience</p>
-    </div>
-    <div class="text-center">
-      <p class="heading-title mb-0">1.5+</p>
-      <p class="sub-heading text-muted mb-0">Experience</p>
-    </div>
-    <div class="text-center">
-      <p class="heading-title mb-0">1.5+</p>
-      <p class="sub-heading text-muted mb-0">Experience</p>
     </div>
   </div>
   <hr class="hor-line">
-  <div class="project-list-wrap">
-    <div class="project-list-top d-flex justify-content-between align-items-center py-3">
-      <div class="d-flex align-items-center">
-        <img src="assets/images/profile.jpg" class="project-img rounded-circle">
-        <h1 class="heading-title mb-0 ml-2 font-weight-medium">Akhilesh Kumar</h1>
-      </div>
-      <div>
-        <button class="btn p-0"><i class="icon-more-horizontal" (click)="open(content)"></i></button>
-      </div>
+  <div class="profile-overview d-flex justify-content-around align-items-center py-2">
+    <div class="text-center">
+      <p class="heading-title mb-0">2+ years</p>
+      <p class="sub-heading text-muted mb-0">Experience</p>
     </div>
-    <hr class="hor-line">
-    <div class="project-list-middle">
-      <img src="assets/images/profile.jpg" class="project-img">
-    </div>
-    <hr class="hor-line">
-    <div class="d-flex justify-content-between align-items-center py-1">
-      <div class="d-flex align-items-center">
-        <button class="btn p-0"><i class="icon-copy"></i></button>
-      </div>
-      <div>
-        <button class="btn btn-white p-0"><i class="icon-send"></i></button>
-      </div>
-    </div>
-    <div>
-      <p class="heading-title mb-0 font-weight-medium">Akhilesh Kumar</p>
-      <p class="sub-heading mb-0 text-truncate">
-        There are many variations of passages of Lorem Ipsum available
-      </p>
-      <p class="sub-heading" (click)="readMore( readMoreModal )">read more</p>
-      <p class="text-muted font-size-10">June 2021 - Present</p>
+    <div class="text-center">
+      <p class="heading-title mb-0">15+</p>
+      <p class="sub-heading text-muted mb-0"> Projects</p>
     </div>
   </div>
+  <hr class="hor-line">
+  <a href="mailto:akhileshkr236@gmail.com" class="btn btn-primary get-in-touch">Get in touch</a>
 </section>
 <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-body p-0 text-center">
