@@ -50,6 +50,7 @@
   position: fixed;
   left: 50%;
   bottom: 50px;
+  z-index: 1049;
   transform: translateX(-50%);
   animation: 1.5s cubic-bezier(0.95, 0.02, 0.01, 1.01) infinite swing;
 }
