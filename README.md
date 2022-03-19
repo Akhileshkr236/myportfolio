@@ -1,3 +1,7 @@
+This is my portfolio (inspired by instagram)
+Portfolio link: https://akhileshkr236.github.io/myportfolio/
+
+
 # InstaPortfolioFinal
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
