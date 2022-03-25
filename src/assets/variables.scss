@@ -7,6 +7,7 @@ $btn-blue: #0095f6;
 $btn-black: #212529;
 $github-color: #0d2636;
 $linkedin-color: #0274b3;
+$twitter-color: #1d9bf0;
 $insta-yellow: #f6df00;
 $insta-purple: #7a36ad;
 
@@ -23,6 +24,9 @@ $font-size-28: 1.75rem;
 }
 .github-bg{
   background: $github-color;
+}
+.twitter-bg{
+  background: $twitter-color;
 }
 .instagram-bg{
   background: linear-gradient( 45deg, $insta-yellow 10%, $insta-purple 80%);

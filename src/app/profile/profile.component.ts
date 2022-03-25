@@ -36,12 +36,12 @@ export class ProfileComponent implements OnInit {
         background: 'instagram-bg',
         link: 'https://www.instagram.com/lensrealty/'
       },
-      /*{
-        title: 'Behance',
-        icon: 'icon-instagram',
-        background: 'instagram-bg',
-        link: 'https://www.behance.net/akhileshkumar35'
-      }*/
+      {
+        title: 'Twitter',
+        icon: 'icon-twitter',
+        background: 'twitter-bg',
+        link: 'https://twitter.com/Akhiles10800613'
+      }
     ];
   }
 
