@@ -1,3 +1,21 @@
+.light-theme{
+  --background-color: #fff;
+  --text-color: #262626;
+  --box-shadow: 0 1px rgb(0, 0, 0, 0.1);
+  --border-color: rgba(#000, 0.1);
+  --light-border: #dee2e6;
+  --scroll-bar: #e5e5e5;
+}
+
+.dark-theme{
+  --background-color: #000;
+  --text-color: #fff;
+  --box-shadow: 0 1px rgba(#fff, 0.1);
+  --border-color: rgba(#fff, 0.6);
+  --light-border: #515151;
+  --scroll-bar: #5c5c5c;
+}
+
 $theme-box-shadow: #191919;
 $btn-box-shadow: #677680;
 $primary: #f7f7f7;

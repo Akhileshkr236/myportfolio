@@ -1,7 +1,9 @@
 .footer-wrap{
   height: 2.75rem;
-  background: $white;
-  border-top: 0.0625rem solid rgba($black, 0.1);
+  background: var(--background-color);
+  border-top-width: 0.0625rem;
+  border-top-style: solid;
+  border-top-color: var(--light-border);
   .footer-pro-img{
     width: 1.6875rem;
     height: 1.6875rem;
@@ -14,7 +16,7 @@
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background: $black;
+        background: var(--text-color);
         position: absolute;
         left: 50%;
         bottom: -0.125rem;

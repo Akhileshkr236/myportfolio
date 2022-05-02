@@ -51,9 +51,9 @@
           <div class="d-flex flex-wrap project-list-top one-line-desc">
             <ng-container *ngFor="let language of exp.languages">
             <div class="d-flex align-items-center badge badge-primary m-1">
-              <p class="project-img rounded-circle position-relative m-0"><span [innerHTML]="getFirstLetter(language)"></span></p>
-              <div class="ml-2">
-                <p class="mb-0 font-weight-medium">{{ language }}</p>
+              <p class="project-img rounded-circle position-relative m-0"><span class="text-white" [innerHTML]="getFirstLetter(language)"></span></p>
+              <div class="ml-2 bg-transparent">
+                <p class="mb-0 font-weight-medium bg-transparent text-white">{{ language }}</p>
               </div>
             </div>
             </ng-container>
@@ -65,9 +65,9 @@
           <div class="d-flex flex-wrap project-list-top one-line-desc">
             <ng-container *ngFor="let software of exp.softwares">
               <div class="d-flex align-items-center badge badge-primary m-1">
-                <p class="project-img rounded-circle position-relative m-0"><span [innerHTML]="getFirstLetter( software )"></span></p>
-                <div class="ml-2">
-                  <p class="mb-0 font-weight-medium">{{ software }}</p>
+                <p class="project-img rounded-circle position-relative m-0"><span class="text-white" [innerHTML]="getFirstLetter( software )"></span></p>
+                <div class="ml-2 bg-transparent">
+                  <p class="mb-0 font-weight-medium bg-transparent text-white">{{ software }}</p>
                 </div>
               </div>
             </ng-container>

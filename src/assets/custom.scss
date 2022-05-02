@@ -109,18 +109,25 @@ custom class*/
 .sub-heading{
   font-size: $font-size-sm;
   font-weight: $font-weight-normal;
-  color: $headings-color;
+  color: var(--text-color);
 }
 .hor-line{
-  border-top: 0.0625rem solid rgba($black, 0.1);
+  border-top-width: 0.0625rem;
+  border-top-style: solid;
+  border-top-color: var(--light-border) ;
   margin: 0 -1rem;
 }
+
 
 @media (min-width: 576px) {
   .page-box{
     max-width: 36rem;
-    border-left: 0.0625rem solid rgba($black, 0.1);
-    border-right: 0.0625rem solid rgba($black, 0.1);
+    border-right-color: var(--light-border);
+    border-right-width: 0.0625rem;
+    border-right-style: solid;
+    border-left-color: var(--light-border);
+    border-left-width: 0.0625rem;
+    border-left-style: solid;
     margin: 0 auto;
   }
 }
