@@ -1,7 +1,7 @@
 <app-header></app-header>
-<div class="custom-control custom-switch switching-button position-absolute" style="z-index: 99999;">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1"  (click)="switchTheme()">
-  <label class="custom-control-label" for="customSwitch1"></label>
+<div class="custom-control custom-switch switching-button position-fixed">
+  <input type="checkbox" class="custom-control-input" id="switchTheme"  (click)="switchTheme()">
+  <label class="custom-control-label" for="switchTheme"></label>
 </div>
 <app-footer></app-footer>
 <router-outlet (activate)="$event"></router-outlet>

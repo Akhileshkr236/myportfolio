@@ -60,7 +60,7 @@
 .switching-button{
   top: 10px;
   right: 10px;
-  z-index: 9999;
+  z-index: 9999 !important;
 }
 
 @keyframes swing {
@@ -72,5 +72,12 @@
   }
   100%{
     bottom: 55px;
+  }
+}
+
+@media (min-width: 576px){
+  .switching-button{
+    right: calc(50% - 18rem);
+    transform: translateX(-50%);
   }
 }
