@@ -1,15 +1,25 @@
 h1,h2,h3,h4,h5,h6{
   margin-bottom: 4px !important;
+  color: var(--text-color) !important;
 }
 p{
   margin-bottom: 4px !important;
+  color: var(--text-color) !important;
 }
 a, a:active, a:visited, a:hover{
-  color: $btn-black !important;
+  color: var(--text-color) !important;
   text-decoration: none;
 }
 html{
   scroll-behavior: smooth;
+}
+body{
+  background-color: var(--background-color) !important;
+}
+ul{
+  li{
+    color: var(--text-color);
+  }
 }
 /* width */
 ::-webkit-scrollbar {
@@ -18,16 +28,16 @@ html{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: var(--background-color);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba($black, 0.1);
+  background: var(--scroll-bar);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba($black, 0.3);
+  background: var(--scroll-bar);
 }

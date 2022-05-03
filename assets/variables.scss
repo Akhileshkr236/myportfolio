@@ -1,3 +1,21 @@
+.light-theme{
+  --background-color: #fff;
+  --text-color: #262626;
+  --box-shadow: 0 1px rgb(0, 0, 0, 0.1);
+  --border-color: rgba(#000, 0.1);
+  --light-border: #dee2e6;
+  --scroll-bar: #e5e5e5;
+}
+
+.dark-theme{
+  --background-color: #000;
+  --text-color: #fff;
+  --box-shadow: 0 1px rgba(#fff, 0.1);
+  --border-color: rgba(#fff, 0.6);
+  --light-border: #515151;
+  --scroll-bar: #5c5c5c;
+}
+
 $theme-box-shadow: #191919;
 $btn-box-shadow: #677680;
 $primary: #f7f7f7;
@@ -7,6 +25,7 @@ $btn-blue: #0095f6;
 $btn-black: #212529;
 $github-color: #0d2636;
 $linkedin-color: #0274b3;
+$twitter-color: #1d9bf0;
 $insta-yellow: #f6df00;
 $insta-purple: #7a36ad;
 
@@ -23,6 +42,9 @@ $font-size-28: 1.75rem;
 }
 .github-bg{
   background: $github-color;
+}
+.twitter-bg{
+  background: $twitter-color;
 }
 .instagram-bg{
   background: linear-gradient( 45deg, $insta-yellow 10%, $insta-purple 80%);
