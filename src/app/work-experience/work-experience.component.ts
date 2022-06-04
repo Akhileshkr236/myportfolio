@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NavigationEnd, Router} from "@angular/router";
+import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-work-experience',
@@ -9,8 +10,12 @@ export class WorkExperienceComponent implements OnInit {
 
   public workExperience: any;
   constructor(
-    private router: Router
+    private router: Router,
+    config: NgbModalConfig, 
+    private modalService: NgbModal
   ) {
+    config.backdrop = true;
+    config.keyboard = true;
     this.workExperience= [
       {
         name: 'Akhilesh Kumar',
@@ -22,22 +27,28 @@ export class WorkExperienceComponent implements OnInit {
         jobDesc: [
           'Collaborate with product managers and designers to iterate on requirements, designs, and implementations.',
           'Bridge the gap between user interface design and technical implementation.',
-          'Currently working on Responsive design, JS libraries(Angular) for enhanced interactions.'
+          'Currently working on Responsive design, JS libraries(Angular, React) for enhanced interactions.'
         ],
         projects: [
-          'Trustwork',
-          'Futuregenerali',
+          'JobCall',
+          'IdCore',
+          'SmartProp',
+          'GetDone',
+          'ShopSupply',
           'Fluid HS'
         ],
         languages: [
           'Angular',
+          'React',
           'TypeScript',
           'CSS',
           'HTML/HTML5',
         ],
         softwares:[
           'Git',
-          'Figma'
+          'Figma',
+          'Jira',
+          'Confu'
         ]
       },
       {
@@ -108,6 +119,9 @@ export class WorkExperienceComponent implements OnInit {
       }
       window.scrollTo(0, 0)
     });
+  }
+  open(content) {
+    this.modalService.open(content, { windowClass: 'custom-drawer custom-modal'});
   }
 
 }
