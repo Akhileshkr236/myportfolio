@@ -12,6 +12,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     FooterComponent,
     WorkExperienceComponent,
     EducationComponent,
-    SkillsComponent
+    SkillsComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
