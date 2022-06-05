@@ -12,9 +12,15 @@ export class HeaderComponent implements OnInit {
   headerText: string = 'Resume';
 
   ngOnInit(): void {
+    this.headerTexTDefine();
+  }
+   headerTexTDefine(){
     this.headerText =  this.router.url;
-    this.headerText = this.headerText.replace('/','');
-    console.log(this.headerText);
-    
+    if(this.headerText == '/'){
+      this.headerText = 'Profile';
+    } else{
+      this.headerText = this.headerText.replace('/','');
+      console.log(this.headerText);
+    }
    }
 }
