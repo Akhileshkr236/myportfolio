@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {NavigationEnd, Router} from "@angular/router";
-import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-work-experience',
@@ -10,12 +9,8 @@ export class WorkExperienceComponent implements OnInit {
 
   public workExperience: any;
   constructor(
-    private router: Router,
-    config: NgbModalConfig, 
-    private modalService: NgbModal
+    private router: Router
   ) {
-    config.backdrop = true;
-    config.keyboard = true;
     this.workExperience= [
       {
         name: 'Akhilesh Kumar',
@@ -119,9 +114,6 @@ export class WorkExperienceComponent implements OnInit {
       }
       window.scrollTo(0, 0)
     });
-  }
-  open(content) {
-    this.modalService.open(content, { windowClass: 'custom-drawer custom-modal'});
   }
 
 }

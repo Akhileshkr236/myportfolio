@@ -1,4 +1,40 @@
 <app-header></app-header>
-<section class="page-pt px-3 page-pb page-box min-vh-100">
-    s
+<section class="page-pt page-pb page-box min-vh-100">
+    <div class="d-flex flex-wrap">
+        <div *ngFor="let portfolio of portfolio" [id]="portfolio.id" role="button" class="portfolio-item-wrap">
+            <div class="portfolio-item" role="button" (click)="open(portfolioModal)">
+              <img class="img-fluid" alt="..." [src]="portfolio.img">
+            </div>
+<!--          Open More details modal-->
+            <ng-template #portfolioModal let-c="close" let-d="dismiss">
+              <div class="modal-header">
+                <h6 class="text-center w-100">{{portfolio.title}}</h6>
+              </div>
+              <div class="modal-body">
+                <!--profile top img and name-->
+                <div class="d-flex align-items-start mt-3 mb-4">
+                  <div class="profile-wrap">
+                    <img [src]="portfolio.img" class="rounded-circle mr-4">
+                  </div>
+                  <div class="w-100">
+                    <h2 class="font-size-28 font-weight-thin">{{portfolio.title}}</h2>
+                    <a class="btn btn-outline-darkest font-weight-semi-bold py-0 w-100" href="../../assets/images/resume/Akhilesh_Kumar.pdf" download>Download Resume</a>
+                  </div>
+                </div>
+                <!--profile desc-->
+                <div class="mb-4">
+                  <h1 class="heading-title">Akhilesh Kumar</h1>
+                  <p class="sub-heading mb-3">Hey! I'm Akhilesh, a UI developer, who strives to develop efficient frontend solutions and design beautiful & user-friendly user interfaces. This is my home on the web where I post my thoughts and showcase my work and a bit about myself.</p>
+                  <p class="sub-heading mb-3">In my free time, I like to do sketching and learn new things.</p>
+                  <p class="sub-heading">I try my hands on a lot of things but I consider myself best in designing and developing UI for projects. For the Frontend, I mostly use Angular with git as the version control system. For the Backend, I work best with node.js and php. For the Database, I work best with MySQL, currently learning MongoDB also</p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+              </div>
+            </ng-template>
+        </div>
+    </div>
 </section>
+
+

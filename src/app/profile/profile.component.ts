@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from "@angular/router";
-import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  providers: [NgbModalConfig, NgbModal]
+  providers: [NgbModal]
 })
 export class ProfileComponent implements OnInit {
 
   public socialHandle: any;
   constructor(
-    config: NgbModalConfig,
     private modalService: NgbModal,
     private router: Router
   ) {
