@@ -8,7 +8,7 @@ export class HeaderComponent implements OnInit {
   constructor(
     private router: Router
   ) {}
-  
+
   headerText: string = 'Resume';
 
   ngOnInit(): void {
@@ -20,7 +20,6 @@ export class HeaderComponent implements OnInit {
       this.headerText = 'Profile';
     } else{
       this.headerText = this.headerText.replace('/','');
-      console.log(this.headerText);
     }
    }
 }

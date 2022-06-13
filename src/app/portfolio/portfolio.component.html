@@ -12,25 +12,31 @@
               </div>
               <div class="modal-body">
                 <!--profile top img and name-->
-                <div class="d-flex align-items-start mt-3 mb-4">
+                <div class="d-flex align-items-center mb-4">
                   <div class="profile-wrap">
-                    <img [src]="portfolio.img" class="rounded-circle mr-4">
+                    <img [src]="portfolio.img" class="rounded-circle bordered mr-4">
                   </div>
                   <div class="w-100">
-                    <h2 class="font-size-28 font-weight-thin">{{portfolio.title}}</h2>
-                    <a class="btn btn-outline-darkest font-weight-semi-bold py-0 w-100" href="../../assets/images/resume/Akhilesh_Kumar.pdf" download>Download Resume</a>
+                    <h4 class="mb-0">{{portfolio.title}}</h4>
+                    <p class="font-weight-thin mb-0">Associated with {{portfolio.associated}}</p>
                   </div>
                 </div>
                 <!--profile desc-->
-                <div class="mb-4">
-                  <h1 class="heading-title">Akhilesh Kumar</h1>
-                  <p class="sub-heading mb-3">Hey! I'm Akhilesh, a UI developer, who strives to develop efficient frontend solutions and design beautiful & user-friendly user interfaces. This is my home on the web where I post my thoughts and showcase my work and a bit about myself.</p>
-                  <p class="sub-heading mb-3">In my free time, I like to do sketching and learn new things.</p>
-                  <p class="sub-heading">I try my hands on a lot of things but I consider myself best in designing and developing UI for projects. For the Frontend, I mostly use Angular with git as the version control system. For the Backend, I work best with node.js and php. For the Database, I work best with MySQL, currently learning MongoDB also</p>
+                <div>
+                  <h6 class="heading mb-3">Job Responsibilities</h6>
+                  <p class="sub-heading mb-3">{{portfolio.desc}}</p>
+                  <ul class="mb-2">
+                    <ng-container *ngFor="let keypoint of portfolio.keypoint">
+                      <li class="sub-heading">{{ keypoint }}</li>
+                    </ng-container>
+                  </ul>
+                  <h6 class="heading mb-0">Project Link</h6>
+                  <a [href]="portfolio.link" class="sub-heading mb-3">{{portfolio.title}}</a>
                 </div>
               </div>
+
               <div class="modal-footer">
-                <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+                sdf
               </div>
             </ng-template>
         </div>

@@ -21,6 +21,11 @@
     object-fit: cover;
   }
 }
+
+.border-light{
+  border: 0.0625rem solid var(--light-border);
+}
+
 @media (min-width: 576px) {
     .portfolio-item-wrap{
         padding: 0.25rem;
