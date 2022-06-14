@@ -43,7 +43,7 @@ export class WorkExperienceComponent implements OnInit {
           'Git',
           'Figma',
           'Jira',
-          'Confu'
+          'Confluence'
         ]
       },
       {

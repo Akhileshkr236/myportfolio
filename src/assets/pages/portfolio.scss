@@ -1,9 +1,10 @@
 .portfolio-item-wrap{
     padding: 0.25rem;
     .portfolio-item{
-      background-color: red;
-      width: calc(50vw - 0.5rem);
+      border: 0.0625rem solid var(--light-border);
+      width: calc(50vw - 14px);
       height: calc(50vw - 0.5rem);
+      padding: 0.0625rem;
       .img-fluid{
         background-color: $white;
         width: auto;
@@ -30,9 +31,9 @@
     .portfolio-item-wrap{
         padding: 0.25rem;
         .portfolio-item{
-            background-color: red;
-            width: 11.5rem;
-            height: 11.5rem;
+            border: 0.0625rem solid var(--light-border);
+            width: 11.4375rem;
+            height: 11.4375rem;
         }
     }
 }

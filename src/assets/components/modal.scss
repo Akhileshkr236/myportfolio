@@ -75,6 +75,7 @@
       border-right: 0.0625rem solid var(--light-border);
       height: auto;
       overflow: auto;
+      max-height: calc(80vh - 72px);
     }
     .modal-footer{
       border-left: 0.0625rem solid var(--light-border);

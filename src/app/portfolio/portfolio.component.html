@@ -1,6 +1,6 @@
 <app-header></app-header>
 <section class="page-pt page-pb page-box min-vh-100">
-    <div class="d-flex flex-wrap">
+    <div class="d-flex flex-wrap justify-content-around justify-content-sm-start">
         <div *ngFor="let portfolio of portfolio" [id]="portfolio.id" role="button" class="portfolio-item-wrap">
             <div class="portfolio-item" role="button" (click)="open(portfolioModal)">
               <img class="img-fluid" alt="..." [src]="portfolio.img">
@@ -8,11 +8,11 @@
 <!--          Open More details modal-->
             <ng-template #portfolioModal let-c="close" let-d="dismiss">
               <div class="modal-header">
-                <h6 class="text-center w-100">{{portfolio.title}}</h6>
+                <h6 class="text-center w-100" ngbAutoFocus>{{portfolio.title}}</h6>
               </div>
               <div class="modal-body">
                 <!--profile top img and name-->
-                <div class="d-flex align-items-center mb-4">
+                <div class="d-flex align-items-center mb-5">
                   <div class="profile-wrap">
                     <img [src]="portfolio.img" class="rounded-circle bordered mr-4">
                   </div>
@@ -34,9 +34,8 @@
                   <a [href]="portfolio.link" class="sub-heading mb-3">{{portfolio.title}}</a>
                 </div>
               </div>
-
               <div class="modal-footer">
-                sdf
+
               </div>
             </ng-template>
         </div>
