@@ -17,7 +17,7 @@ export class PortfolioComponent implements OnInit {
         title: 'GetDone',
         associated: 'MetaDesign Solutions',
         link: 'https://www.getdone.com/',
-        img: '../../assets/images/getdone.svg',
+        img: 'assets/images/getdone.svg',
         desc: 'GetDone is a tech-based property maintenance project which comes under REX a company based in Austin, Texas. It is a property maintenance service focused on quick, efficient and high quality services with vetted professionals.',
         keypoint: [
           'As a Front End Engineer I was responsible for building the next generation of user interface/ experience for one of their Customer side application.',
@@ -33,7 +33,7 @@ export class PortfolioComponent implements OnInit {
         title: 'ShopSupply',
         associated: 'MetaDesign Solutions',
         link: 'https://www.shopsupply.com/',
-        img: '../../assets/images/shopsupply.svg',
+        img: 'assets/images/shopsupply.svg',
         desc: 'Shop Supply project build on ReactJS . It is an SAAS application where user can add items lists and order them online. Three types of users can use the application- Buyer, Seller and Admin. Client registers on application if they want to order some items from a shop. Items sellers can also register on the application to sell their items. Admin can look over the whole system and control users and items.',
         keypoint: [
           'This application is build on JavaScript framework (React)',
@@ -48,7 +48,7 @@ export class PortfolioComponent implements OnInit {
         title: 'JobCall',
         associated: 'MetaDesign Solutions',
         link: 'https://www.jobcall.com/',
-        img: '../../assets/images/jobcall.svg',
+        img: 'assets/images/jobcall.svg',
         desc: 'JobCall is a complaint management platform which comes under REX a company based in Austin, Texas.Job Call is a complaint management project build on ReactJS. When user calls on the given phone number than an AI takes up the message asking the issue and some other details. After that AI automatically calls the respective property manager, reminding about the raised call. Than the property manager handles the call accordingly and move the ticket as closed after resolving. Other than the core functionalities of the platform, there are other applications of user management.',
         keypoint: [
           'This application is build on JavaScript framework (React)',
@@ -61,7 +61,7 @@ export class PortfolioComponent implements OnInit {
         title: 'IdCore',
         associated: 'MetaDesign Solutions',
         link: 'https://www.idcore.com/',
-        img: '../../assets/images/idcore.svg',
+        img: 'assets/images/idcore.svg',
         desc: 'Shop Supply is a Vendor side Enterprise resource planning (ERP) project build on ReactJS. In this vendor login with their phone number and corresponding property which he has added are listed there and he can add or delete more properties depending on his needs.',
         keypoint: [
           'This application is build on JavaScript framework (React)',
@@ -74,7 +74,7 @@ export class PortfolioComponent implements OnInit {
         title: 'SmartProp',
         associated: 'MetaDesign Solutions',
         link: 'https://www.smartprop.com/',
-        img: '../../assets/images/smartProp.svg',
+        img: 'assets/images/smartProp.svg',
         desc: 'SmartProp is a virtual AI for real state build in ReactJS.',
         keypoint: [
           'This application is build on JavaScript framework (React)',
