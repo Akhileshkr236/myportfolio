@@ -25,3 +25,94 @@
     bottom: 0;
   }
 }
+
+.custom-modal{
+  &.custom-drawer{
+    top: auto;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(var(--background-color), 0);
+    &.modal{
+      overflow: unset;
+      &.fade{
+        .modal-dialog{
+          transform: translate(0, 100%);
+        }
+      }
+      &.show{
+        .modal-dialog{
+          transform: none;
+        }
+      }
+    }
+    .modal-dialog{
+      border-radius: 0.75rem 0.75rem 0 0;
+      margin: 0;
+    }
+    .modal-content{
+      border-radius: 0.75rem 0.75rem 0 0;
+      max-height: calc(100vh - 8.125rem);
+    }
+    .modal-header{
+      padding: 2.125rem 1rem 0.75rem;
+      border-radius: 0.75rem 0.75rem 0 0;
+      border: 0.0625rem solid var(--light-border);
+      &::after{
+        content: '';
+        position: absolute;
+        top: 0.75rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--light-border);
+        border-radius: 0.25rem;
+        width: 3rem;
+        height: 0.25rem;
+      }
+    }
+    .modal-body{
+      padding: 1.5rem;
+      border-left: 0.0625rem solid var(--light-border);
+      border-right: 0.0625rem solid var(--light-border);
+      height: auto;
+      overflow: auto;
+      max-height: calc(80vh - 72px);
+    }
+    .modal-footer{
+      border-left: 0.0625rem solid var(--light-border);
+      border-right: 0.0625rem solid var(--light-border);
+      border-top: 0.0625rem solid var(--light-border);
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+@media (min-width: 576px){
+
+.custom-modal{
+  &.custom-drawer{
+    top: auto;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(var(--background-color), 0);
+    &.modal{
+      overflow: unset;
+      .modal-dialog{
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 576px;
+      }
+      &.fade{
+        .modal-dialog{
+          transform: translate(-50%, 100%);
+        }
+        }
+        &.show{
+          .modal-dialog{
+            transform: translateX(-50%);
+          }
+        }
+    }
+  }
+}
+}

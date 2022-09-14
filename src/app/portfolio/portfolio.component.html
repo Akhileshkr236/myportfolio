@@ -1,0 +1,45 @@
+<app-header></app-header>
+<section class="page-pt page-pb page-box min-vh-100">
+    <div class="d-flex flex-wrap justify-content-around justify-content-sm-start">
+        <div *ngFor="let portfolio of portfolio" [id]="portfolio.id" role="button" class="portfolio-item-wrap">
+            <div class="portfolio-item" role="button" (click)="open(portfolioModal)">
+              <img class="img-fluid" alt="..." [src]="portfolio.img">
+            </div>
+<!--          Open More details modal-->
+            <ng-template #portfolioModal let-c="close" let-d="dismiss">
+              <div class="modal-header">
+                <h6 class="text-center w-100" ngbAutoFocus>{{portfolio.title}}</h6>
+              </div>
+              <div class="modal-body">
+                <!--profile top img and name-->
+                <div class="d-flex align-items-center mb-5">
+                  <div class="profile-wrap">
+                    <img [src]="portfolio.img" class="rounded-circle bordered mr-4">
+                  </div>
+                  <div class="w-100">
+                    <h4 class="mb-0">{{portfolio.title}}</h4>
+                    <p class="font-weight-thin mb-0">Associated with {{portfolio.associated}}</p>
+                  </div>
+                </div>
+                <!--profile desc-->
+                <div>
+                  <h6 class="heading mb-3">Job Responsibilities</h6>
+                  <p class="sub-heading mb-3">{{portfolio.desc}}</p>
+                  <ul class="mb-2">
+                    <ng-container *ngFor="let keypoint of portfolio.keypoint">
+                      <li class="sub-heading">{{ keypoint }}</li>
+                    </ng-container>
+                  </ul>
+                  <h6 class="heading mb-0">Project Link</h6>
+                  <a [href]="portfolio.link" class="sub-heading mb-3">{{portfolio.title}}</a>
+                </div>
+              </div>
+              <div class="modal-footer">
+
+              </div>
+            </ng-template>
+        </div>
+    </div>
+</section>
+
+

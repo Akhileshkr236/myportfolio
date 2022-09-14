@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from "@angular/router";
-import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  providers: [NgbModalConfig, NgbModal]
+  providers: [NgbModal]
 })
 export class ProfileComponent implements OnInit {
 
   public socialHandle: any;
   constructor(
-    config: NgbModalConfig,
     private modalService: NgbModal,
     private router: Router
   ) {
@@ -34,7 +33,7 @@ export class ProfileComponent implements OnInit {
         title: 'Instagram',
         icon: 'icon-instagram',
         background: 'instagram-bg',
-        link: 'https://www.instagram.com/lensrealty/'
+        link: 'https://www.instagram.com/nyxuchiha1/'
       },
       {
         title: 'Twitter',
