@@ -58,9 +58,10 @@
 }
 
 .switching-button{
+  background: transparent;
   top: 10px;
   right: 10px;
-  z-index: 9999 !important;
+  z-index: 1031 !important;
 }
 
 @keyframes swing {
