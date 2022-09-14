@@ -33,7 +33,7 @@ export class ProfileComponent implements OnInit {
         title: 'Instagram',
         icon: 'icon-instagram',
         background: 'instagram-bg',
-        link: 'https://www.instagram.com/nyx_uchiha/'
+        link: 'https://www.instagram.com/nyxuchiha1/'
       },
       {
         title: 'Twitter',

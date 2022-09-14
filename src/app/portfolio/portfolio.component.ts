@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-portfolio',
@@ -34,11 +34,14 @@ export class PortfolioComponent implements OnInit {
         associated: 'MetaDesign Solutions',
         link: 'https://www.shopsupply.com/',
         img: '../../assets/images/shopsupply.svg',
-        desc: 'ShopSupply is a internal social media platform project which comes under REX a company based in Austin, Texas.',
+        desc: 'Shop Supply project build on ReactJS . It is an SAAS application where user can add items lists and order them online. Three types of users can use the application- Buyer, Seller and Admin. Client registers on application if they want to order some items from a shop. Items sellers can also register on the application to sell their items. Admin can look over the whole system and control users and items.',
         keypoint: [
           'This application is build on JavaScript framework (React)',
+          'I worked as a UI developer on this application.',
           'Collaborate with backend developers for UI integration with the dynamic data from the APIs.',
-          'Analyse and identify gaps in functional / business requirements and effectively communicate to the product / business persons.'
+          'Analyse and identify gaps in functional / business requirements and effectively communicate to the product / business persons.',
+          'Developing UI/UX that produces interactive web pages.',
+          'Troubleshoot issues and bugs on microsites when published. Reviewing the code and minimization of file sizes accordingly.'
         ]
       },
       {
@@ -46,7 +49,7 @@ export class PortfolioComponent implements OnInit {
         associated: 'MetaDesign Solutions',
         link: 'https://www.jobcall.com/',
         img: '../../assets/images/jobcall.svg',
-        desc: 'JobCall is a complaint management platform which comes under REX a company based in Austin, Texas. When user calls on the given phone number than an AI takes up the message asking the issue and some other details. After that AI automatically calls the respective property manager, reminding about the raised call. Than the property manager handles the call accordingly and move the ticket as closed after resolving.',
+        desc: 'JobCall is a complaint management platform which comes under REX a company based in Austin, Texas.Job Call is a complaint management project build on ReactJS. When user calls on the given phone number than an AI takes up the message asking the issue and some other details. After that AI automatically calls the respective property manager, reminding about the raised call. Than the property manager handles the call accordingly and move the ticket as closed after resolving. Other than the core functionalities of the platform, there are other applications of user management.',
         keypoint: [
           'This application is build on JavaScript framework (React)',
           'Collaborate with backend developers for UI integration with the dynamic data from the APIs.',
@@ -59,7 +62,7 @@ export class PortfolioComponent implements OnInit {
         associated: 'MetaDesign Solutions',
         link: 'https://www.idcore.com/',
         img: '../../assets/images/idcore.svg',
-        desc: 'JobCall is a complaint management platform which comes under REX a company based in Austin, Texas.',
+        desc: 'Shop Supply is a Vendor side Enterprise resource planning (ERP) project build on ReactJS. In this vendor login with their phone number and corresponding property which he has added are listed there and he can add or delete more properties depending on his needs.',
         keypoint: [
           'This application is build on JavaScript framework (React)',
           'Collaborate with backend developers for UI integration with the dynamic data from the APIs.',
@@ -68,23 +71,11 @@ export class PortfolioComponent implements OnInit {
         ]
       },
       {
-        title: 'Hycin',
-        associated: 'Vorrow Technology Solutions',
-        link: 'https://play.google.com/store/apps/details?id=com.chat.hycinapp',
-        img: 'https://play-lh.googleusercontent.com/4UnpXBqydi0cps2PdHwsQTzitPBBkVaY5x-5qmjXo5PkFgUklUCN_24l8_1rB407EaU=w240-h480-rw',
-        desc: 'JobCall is a complaint management platform which comes under REX a company based in Austin, Texas.',
-        keypoint: [
-          'Collaborate with backend developers for UI integration with the dynamic data from the APIs.',
-          'Analyse and identify gaps in functional / business requirements and effectively communicate to the product / business persons.',
-          'Attention to detail and a dedication to deliver a high-quality, stable delivery is essential.'
-        ]
-      },
-      {
-        title: 'Academy Pro',
-        associated: 'Vorrow Technology Solutions',
-        link: 'https://play.google.com/store/apps/details?id=com.vorrowtech.AcademyPro',
-        img: 'https://play-lh.googleusercontent.com/5pYkcMMgVWn_AQVuz-pt8yYilLdjlYyYTotRr-KR_PfbKkklnt3es0fFTihzN6x_p5Q=w240-h480-rw',
-        desc: 'JobCall is a complaint management platform which comes under REX a company based in Austin, Texas.',
+        title: 'SmartProp',
+        associated: 'MetaDesign Solutions',
+        link: 'https://www.smartprop.com/',
+        img: '../../assets/images/smartProp.svg',
+        desc: 'SmartProp is a virtual AI for real state build in ReactJS.',
         keypoint: [
           'This application is build on JavaScript framework (React)',
           'Collaborate with backend developers for UI integration with the dynamic data from the APIs.',
@@ -113,7 +104,7 @@ export class PortfolioComponent implements OnInit {
 
 
   open(portfolioModal) {
-    this.modalService.open(portfolioModal, {windowClass: 'custom-drawer custom-modal'});
+    this.modalService.open(portfolioModal, { windowClass: 'custom-drawer custom-modal' });
   }
 
 }

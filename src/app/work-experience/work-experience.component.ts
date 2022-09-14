@@ -20,8 +20,9 @@ export class WorkExperienceComponent implements OnInit {
         profile: 'assets/images/profile.jpg',
         companyLink: 'https://metadesignsolutions.com/',
         jobDesc: [
+          'Built UI components in React.js and Angular to digitize the process of global trade.',
           'Collaborate with product managers and designers to iterate on requirements, designs, and implementations.',
-          'Bridge the gap between user interface design and technical implementation.',
+          'Expertise in API Integration with the User Interface of Web Applications.',
           'Currently working on Responsive design, JS libraries(Angular, React) for enhanced interactions.'
         ],
         projects: [
@@ -30,19 +31,20 @@ export class WorkExperienceComponent implements OnInit {
           'SmartProp',
           'GetDone',
           'ShopSupply',
-          'Fluid HS'
+          'EyLog'
         ],
         languages: [
           'Angular',
           'React',
-          'TypeScript',
+          'TypeScript/JavsScript',
           'CSS',
           'HTML/HTML5',
         ],
         softwares:[
           'Git',
-          'Figma',
+          'Figma/Sketch',
           'Jira',
+          'Trello',
           'Confluence'
         ]
       },
@@ -57,12 +59,12 @@ export class WorkExperienceComponent implements OnInit {
           'Worked as UI Designer and Developer',
           'Collaborate with product managers and designers to iterate on requirements, designs, and implementations.',
           'Bridge the gap between user interface design and technical implementation.',
-          'Day to day responsibility consist of reviewing code and writing code in a manner that it can be reused.'
+          'Day to day responsibility consist of reviewing code and writing code in a manner that it can be reused.',
+          'Ensuring cross-platform optimization and responsiveness of application for all devices and browsers.'
         ],
         projects: [
           'Bunker Group',
           'Hycin- How you chat in',
-          'Bisht Physics'
         ],
         languages: [
           'JavaScript/ jQuery',
@@ -84,8 +86,13 @@ export class WorkExperienceComponent implements OnInit {
         imageSrc: 'assets/images/Freelancer-Logo.jpg',
         profile: 'assets/images/profile.jpg',
         jobDesc: [
-          'Collaborate with clients to iterate on requirements, designs, and implementations.',
+          'Building UI components from UI wireframes using HTML, CSS, JavaScript/jQuery.',
+          'Collaborate with clients, teammates and backend developers to iterate on requirements and designs.',
+          'Expertise in API Integration with the User Interface of Web Applications using PHP.',
           'To finish taken projects on or before deadline.'
+        ],
+        projects: [
+          'Bisht Physics'
         ],
         languages: [
           'PHP',

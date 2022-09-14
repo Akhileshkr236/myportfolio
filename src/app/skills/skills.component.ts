@@ -16,6 +16,7 @@ export class SkillsComponent implements OnInit {
         'CSS',
         'JavaScript/jQuery',
         'Bootstrap',
+        'TailwindCss',
         'Materializecss',
         'Angular',
         'React',
