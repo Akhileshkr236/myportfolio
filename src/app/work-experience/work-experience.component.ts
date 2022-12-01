@@ -20,24 +20,29 @@ export class WorkExperienceComponent implements OnInit {
         profile: 'assets/images/profile.jpg',
         companyLink: 'https://metadesignsolutions.com/',
         jobDesc: [
-          'Built UI components in React.js and Angular to digitize the process of global trade.',
-          'Collaborate with product managers and designers to iterate on requirements, designs, and implementations.',
-          'Expertise in API Integration with the User Interface of Web Applications.',
-          'Currently working on Responsive design, JS libraries(Angular, React) for enhanced interactions.'
+          'Designed softwares  based on requirements and within the constraints of architectural /design guidelines.',
+          'Developed react and angular components in re-usable manner for implementation consistency against the design/architecture to increase the reliability.',
+          'Working knowledge of Web services, Web API, REST services, HTML, CSS3.',
+          'Expertise in CI/CD tools and Code Analysis / Code Review and testing for agile development.'
         ],
         projects: [
+          'Medanta',
+          'Tata Capital',
+          'Kyubooks',
           'JobCall',
           'IdCore',
           'SmartProp',
           'GetDone',
           'ShopSupply',
-          'EyLog'
+          'EyLog',
+          'FGI (Future Generali India Insurance Company)',
+          'Shiv Yog'
         ],
         languages: [
           'Angular',
           'React',
-          'TypeScript/JavsScript',
-          'CSS',
+          'TypeScript/JavaScript',
+          'CSS/CSS3',
           'HTML/HTML5',
         ],
         softwares:[
@@ -50,14 +55,14 @@ export class WorkExperienceComponent implements OnInit {
       },
       {
         name: 'Akhilesh Kumar',
-        duration: 'Oct 2020 - May 2021',
+        duration: 'June 2020 - May 2021',
         designation: 'Jr. Front End Developer',
         imageSrc: 'assets/images/vorrowtechlogo.jpg',
         profile: 'assets/images/profile.jpg',
         companyLink: 'https://www.vorrowtech.com/',
         jobDesc: [
-          'Worked as UI Designer and Developer',
-          'Collaborate with product managers and designers to iterate on requirements, designs, and implementations.',
+          'Worked as UX/UI Designer and Developer',
+          'Work closely with the technical lead, Designers, and engineering individual contributors in your team to design, develop and deploy applications with a strong focus on scalability, and robustness.',
           'Bridge the gap between user interface design and technical implementation.',
           'Day to day responsibility consist of reviewing code and writing code in a manner that it can be reused.',
           'Ensuring cross-platform optimization and responsiveness of application for all devices and browsers.'
@@ -81,7 +86,7 @@ export class WorkExperienceComponent implements OnInit {
       },
       {
         name: 'Akhilesh Kumar',
-        duration: 'June 2019 - Sept 2020',
+        duration: 'May 2019 - May 2020',
         designation: 'As a Freelancer',
         imageSrc: 'assets/images/Freelancer-Logo.jpg',
         profile: 'assets/images/profile.jpg',
@@ -92,7 +97,9 @@ export class WorkExperienceComponent implements OnInit {
           'To finish taken projects on or before deadline.'
         ],
         projects: [
-          'Bisht Physics'
+          'Bisht Physics',
+          'Groom Designs',
+          'Webhance'
         ],
         languages: [
           'PHP',
